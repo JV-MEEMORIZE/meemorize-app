@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       
-      <style jsx global>{`
+      <style>{`
   .glass {
     background: rgba(255, 255, 255, 0.55);
     backdrop-filter: blur(14px);
