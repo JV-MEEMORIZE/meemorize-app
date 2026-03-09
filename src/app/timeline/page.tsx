@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import { useRouter, useSearchParams } from "next/navigation";
 import AppNav from "@/components/AppNav";
@@ -31,7 +31,7 @@ type ChronoItem =
   | { kind: "period"; sortDate: string; data: Period }
   | { kind: "event"; sortDate: string; data: LifeEvent };
 
-export default function TimelinePage() {
+function TimelinePageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -986,5 +986,13 @@ function stopSpeak() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function TimelinePage() {
+  return (
+    <Suspense fallback={<main style={{ padding: 16 }}>Chargement…</main>}>
+      <TimelinePageContent />
+    </Suspense>
   );
 }
