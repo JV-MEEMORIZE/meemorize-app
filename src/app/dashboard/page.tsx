@@ -1209,7 +1209,7 @@ function normalizeEmailFromSpeech(raw: string): string {
       <AppNav /> 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
         
-        <h1>Meemorize App — Dashboard</h1>
+        <h1>Meemorize App — Dashboard : Mon tableau de bord </h1>
         
         <button onClick={signOut} style={{ padding: "10px 14px", cursor: "pointer" }}>
           Déconnexion
