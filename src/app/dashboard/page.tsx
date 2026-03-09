@@ -748,7 +748,7 @@ function createEventFromPeriod(p: any) {
     router.push("/");
   }
 
-  if (loading) return <main className="glass"  style={{ padding: 16 }}>Chargement…</main>;
+  if (loading) return <main   style={{ padding: 16 }}>Chargement…</main>;
 
   const SpeechRecognition =
   typeof window !== "undefined"
@@ -1205,7 +1205,7 @@ function normalizeEmailFromSpeech(raw: string): string {
 
   return (
     
-    <main className="glass"  style={{ maxWidth: 980, margin: "30px auto", padding: 16, fontFamily: "system-ui" }}>
+    <main   style={{ maxWidth: 980, margin: "30px auto", padding: 16, fontFamily: "system-ui" }}>
       <AppNav /> 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
         
@@ -1226,7 +1226,7 @@ function normalizeEmailFromSpeech(raw: string): string {
   }}
 >
   <div style={{ display: "flex", justifyContent: "space-between", gap: 10, flexWrap: "wrap" }}>
-    <h2 className="glass"  style={{ marginTop: 0, marginBottom: 0 }}>Bienvenue dans Meemorize</h2>
+    <h2   style={{ marginTop: 0, marginBottom: 0 }}>Bienvenue dans Meemorize</h2>
 
     <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
       <button onClick={readDashboardIntro} style={{ cursor: "pointer", padding: "8px 12px" }}>
@@ -1238,7 +1238,7 @@ function normalizeEmailFromSpeech(raw: string): string {
     </div>
   </div>
 
-  <p className="glass"  style={{ marginTop: 10 }}>
+  <p   style={{ marginTop: 10 }}>
     Ici, vous pouvez retrouver les grands moments de votre vie, raconter vos souvenirs, et peu à peu
     leur donner la forme d’un livre.
   </p>
@@ -1252,14 +1252,14 @@ function normalizeEmailFromSpeech(raw: string): string {
     Chaque page a un rôle simple :
   </p>
 
-  <ul className="glass"  style={{ marginTop: 8, paddingLeft: 18 }}>
+  <ul   style={{ marginTop: 8, paddingLeft: 18 }}>
     <li><strong>🕰️ Frise</strong> : pour repérer les périodes de votre vie et les événements importants</li>
     <li><strong>💭 Souvenirs</strong> : pour raconter ce que vous avez vécu, à l’écrit ou par la voix</li>
     <li><strong>📖 Chapitres</strong> : pour transformer vos souvenirs en récit</li>
     <li><strong>👥 Personnes</strong> : pour retrouver les personnes qui comptent dans votre histoire</li>
   </ul>
 
-  <p className="glass"  style={{ marginTop: 10 }}>
+  <p   style={{ marginTop: 10 }}>
     Petit à petit, Meemorize vous aide à <strong>préserver votre mémoire</strong> et à
     <strong> transmettre votre histoire</strong> à vos proches.
   </p>
@@ -1273,9 +1273,9 @@ function normalizeEmailFromSpeech(raw: string): string {
     background: "#fff",
   }}
 >
-  <h2 className="glass"  style={{ marginTop: 0 }}>Progression de votre livre</h2>
+  <h2   style={{ marginTop: 0 }}>Progression de votre livre</h2>
 
-  <p className="glass"  style={{ marginTop: 8, opacity: 0.85, lineHeight: 1.6 }}>
+  <p   style={{ marginTop: 8, opacity: 0.85, lineHeight: 1.6 }}>
     Ces repères montrent où vous en êtes pour construire votre histoire.
     Le niveau 1 est suffisant pour tester un premier roman de vie. 
     Le niveau 2 vous permet d'avoir un roman de vie consistant.  
@@ -1284,7 +1284,7 @@ function normalizeEmailFromSpeech(raw: string): string {
   {!progress ? (
     <p>Chargement de la progression…</p>
   ) : (
-    <div className="glass"  style={{ display: "grid", gap: 16, marginTop: 14 }}>
+    <div   style={{ display: "grid", gap: 16, marginTop: 14 }}>
       {/* Progression globale */}
       <div>
         <div style={{ display: "flex", justifyContent: "space-between", gap: 10, flexWrap: "wrap" }}>
@@ -1313,7 +1313,7 @@ function normalizeEmailFromSpeech(raw: string): string {
           />
         </div>
 
-        <div className="glass"  style={{ marginTop: 6, fontSize: 13, lineHeight: 1.5 }}>
+        <div   style={{ marginTop: 6, fontSize: 13, lineHeight: 1.5 }}>
           <div>{getProgressLevelText(progress.global.level)}</div>
           <div style={{ opacity: 0.8 }}>
             {progress.global.nextTarget
@@ -1351,7 +1351,7 @@ function normalizeEmailFromSpeech(raw: string): string {
           />
         </div>
 
-        <div className="glass"  style={{ marginTop: 6, fontSize: 13, lineHeight: 1.5 }}>
+        <div   style={{ marginTop: 6, fontSize: 13, lineHeight: 1.5 }}>
           <div>{getProgressLevelText(progress.periods.level)}</div>
           <div style={{ opacity: 0.8 }}>
             {progress.periods.nextTarget
@@ -1389,7 +1389,7 @@ function normalizeEmailFromSpeech(raw: string): string {
           />
         </div>
 
-        <div className="glass"  style={{ marginTop: 6, fontSize: 13, lineHeight: 1.5 }}>
+        <div   style={{ marginTop: 6, fontSize: 13, lineHeight: 1.5 }}>
           <div>{getProgressLevelText(progress.events.level)}</div>
           <div style={{ opacity: 0.8 }}>
             {progress.events.nextTarget
@@ -1427,7 +1427,7 @@ function normalizeEmailFromSpeech(raw: string): string {
           />
         </div>
 
-        <div className="glass"  style={{ marginTop: 6, fontSize: 13, lineHeight: 1.5 }}>
+        <div   style={{ marginTop: 6, fontSize: 13, lineHeight: 1.5 }}>
           <div>{getProgressLevelText(progress.memories.level)}</div>
           <div style={{ opacity: 0.8 }}>
             {progress.memories.nextTarget
@@ -1459,7 +1459,7 @@ function normalizeEmailFromSpeech(raw: string): string {
 ) : null}
 
 </section>
-      <div className="glass"  style={{ marginTop: 10 }}>
+      <div   style={{ marginTop: 10 }}>
         <label style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <input
             type="checkbox"
@@ -1570,7 +1570,7 @@ function normalizeEmailFromSpeech(raw: string): string {
 
 <section
   id="chapter-preview"
-  className="glass"  style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}
+    style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}
 >
   <h2>Dernier chapitre généré</h2>
 
@@ -1607,7 +1607,7 @@ function normalizeEmailFromSpeech(raw: string): string {
   )}
 </section>
 
-<section className="glass"  style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
+<section   style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
   <h2>Chapitres</h2>
   <div style={{ display: "flex", gap: 10, marginTop: 10 }}>
   <button onClick={() => setChapterFilter("all")} style={{ cursor: "pointer" }}>
@@ -1754,7 +1754,7 @@ function normalizeEmailFromSpeech(raw: string): string {
     </ul>
   )}
 </section>
-<section id="book-preview" className="glass"  style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
+<section id="book-preview"   style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
   <h2>Aperçu livre</h2>
   <button onClick={exportPdf} style={{ cursor: "pointer", marginTop: 10 }}>
   📄 Export PDF (chapitres validés)
@@ -1768,7 +1768,7 @@ function normalizeEmailFromSpeech(raw: string): string {
   )}
 </section>
       {/* --- Formulaire Périodes --- */}
-      <section className="glass"  style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
+      <section   style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
         <h2>{editingPeriodId ? "Modifier une période" : "Ajouter une période"}</h2>
 
         <div style={{ display: "flex", gap: 50, alignItems: "center"}}>
