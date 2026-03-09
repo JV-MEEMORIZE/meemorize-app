@@ -481,6 +481,7 @@ useEffect(() => {
   if (loading) return <main style={{ padding: 16 }}>Chargement…</main>;
 
   return (
+    <main   style={{ maxWidth: 980, margin: "30px auto", padding: 16, fontFamily: "system-ui" }}>
     <div style={{ padding: 16 }}>
       <AppNav />
 
@@ -660,6 +661,7 @@ useEffect(() => {
 
       
     </div>
+  </main>
   );
 }
 

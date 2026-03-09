@@ -599,6 +599,8 @@ function stopSpeak() {
   });
 
   return (
+
+    <main   style={{ maxWidth: 980, margin: "30px auto", padding: 16, fontFamily: "system-ui" }}>
     <div style={{ padding: 16 }}>
       <AppNav />
 
@@ -986,6 +988,7 @@ function stopSpeak() {
         </div>
       </section>
     </div>
+  </main>
   );
 }
 
