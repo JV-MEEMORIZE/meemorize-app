@@ -994,6 +994,7 @@ function normalizeEmailFromSpeech(raw: string): string {
 }
 
 return (
+   <main   style={{ maxWidth: 980, margin: "30px auto", padding: 16, fontFamily: "system-ui" }}>
     <div style={{ padding: 16 }}>
           <AppNav />
     
@@ -1160,5 +1161,5 @@ return (
     </section>
 
     </div>
-  );
+  </main>);
 }

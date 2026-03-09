@@ -10,6 +10,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      
+      <style jsx global>{`
+  .glass {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.35);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+`}</style>
+      
       <body
   style={{
     margin: 0,
