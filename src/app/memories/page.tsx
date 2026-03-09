@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import { useRouter } from "next/navigation";
 import AppNav from "@/components/AppNav";
@@ -37,7 +37,7 @@ type Memory = {
   updated_at: string;
 };
 
-export default function MemoriesPage() {
+function MemoriesPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -660,5 +660,13 @@ useEffect(() => {
 
       
     </div>
+  );
+}
+
+export default function MemoriesPage() {
+  return (
+    <Suspense fallback={<main style={{ padding: 16 }}>Chargement…</main>}>
+      <MemoriesPageContent />
+    </Suspense>
   );
 }
