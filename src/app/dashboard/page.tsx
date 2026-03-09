@@ -1469,6 +1469,7 @@ function normalizeEmailFromSpeech(raw: string): string {
           🔊 Lecture automatique après dictée
         </label>
       </div>
+      {/* 
       <section style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
         <h2>Ma timeline</h2>
         {timeline ? (
@@ -1480,7 +1481,7 @@ function normalizeEmailFromSpeech(raw: string): string {
           <p>Aucune timeline trouvée.</p>
         )}
       </section>
-
+*/}
 
 
 {showPrefs ? (
