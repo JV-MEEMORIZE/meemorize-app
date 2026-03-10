@@ -1995,11 +1995,11 @@ function normalizeEmailFromSpeech(raw: string): string {
 
 <section
   id="memory-form"
+  className="glass"
   style={{
     marginTop: 18,
     padding: 14,
-    border: "1px solid #ddd",
-    borderRadius: 12,
+    
   }}
 >
   <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
@@ -2124,7 +2124,7 @@ function normalizeEmailFromSpeech(raw: string): string {
   </div>
 </section>
 
-<section style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 12 }}>
+<section className="glass" style={{ marginTop: 18, padding: 14 }}>
   <h2>Scanner les personnes</h2>
 
   <button onClick={scanPeople} style={{ cursor: "pointer", padding: "10px 14px" }} disabled={scanLoading}>
