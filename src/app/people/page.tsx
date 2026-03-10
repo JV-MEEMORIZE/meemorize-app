@@ -316,7 +316,7 @@ export default function PeoplePage() {
       ) : null}
 
       {/* Scanner */}
-      <section style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 12 }}>
+      <section className="glass" style={{ marginTop: 18, padding: 14 }}>
         <h2>Scanner les personnes</h2>
 
         <button onClick={scanPeople} style={{ cursor: "pointer", padding: "10px 14px" }} disabled={scanLoading}>
@@ -385,7 +385,7 @@ export default function PeoplePage() {
       </section>
 
       {/* Liste people + contacts */}
-      <section style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 12 }}>
+      <section className="glass" style={{ marginTop: 18, padding: 14 }}>
         <h2>Annuaire</h2>
 
         {people.length === 0 ? (

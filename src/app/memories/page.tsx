@@ -501,7 +501,7 @@ useEffect(() => {
 {/* Formulaire */}
       <section
         id="memory-form"
-        style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 12 }}
+        className="glass" style={{ marginTop: 18, padding: 14 }}
       >
         <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
           <h2 style={{ margin: 0 }}>{editingMemoryId ? "Modifier un souvenir" : "Ajouter un souvenir"}</h2>
@@ -609,7 +609,7 @@ useEffect(() => {
       </section>
 
       {/* Liste */}
-      <section style={{ marginTop: 18 }}>
+      <section className="glass" style={{ marginTop: 18 }}>
         <h2>Souvenirs</h2>
 
         {memories.length === 0 ? (

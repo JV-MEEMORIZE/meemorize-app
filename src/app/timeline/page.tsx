@@ -628,7 +628,7 @@ function stopSpeak() {
       </div>
 
       {/* Liste chrono (une colonne = affichage vertical) */}
-      <section style={{ marginTop: 18 }}>
+      <section className="glass" style={{ marginTop: 18 }}>
         <h2 style={{ marginTop: 0 }}>Chronologie</h2>
 
         {chrono.length === 0 ? (
@@ -753,7 +753,7 @@ function stopSpeak() {
       </section>
 
       {/* Form période (dates l’une au-dessus de l’autre) */}
-      <section id="period-form" style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 12 }}>
+      <section id="period-form" className="glass" style={{ marginTop: 18, padding: 14 }}>
         <h2 style={{ marginTop: 0 }}>{editingPeriodId ? "Modifier une période" : "Ajouter une période"}</h2>
 {dictationError ? (
   <div style={{ marginTop: 10, fontSize: 12, opacity: 0.85 }}>⚠️ {dictationError}</div>
@@ -871,7 +871,7 @@ function stopSpeak() {
       </section>
 
       {/* Form événement (date puis type l’un au-dessus de l’autre) */}
-      <section id="event-form" style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 12 }}>
+      <section id="event-form" className="glass" style={{ marginTop: 18, padding: 14 }}>
         <h2 style={{ marginTop: 0 }}>{editingEventId ? "Modifier un événement" : "Ajouter un événement"}</h2>
         {dictationError ? (
         <div style={{ marginTop: 10, fontSize: 12, opacity: 0.85 }}>⚠️ {dictationError}</div>
