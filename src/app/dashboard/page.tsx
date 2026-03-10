@@ -1216,16 +1216,14 @@ function normalizeEmailFromSpeech(raw: string): string {
         </button>
       </div>
       <section
+  className="glass"
   style={{
     marginTop: 12,
     padding: 16,
-    borderRadius: 14,
-    border: "1px solid #e5e7eb",
-    background: "#fafafa",
     lineHeight: 1.6,
   }}
 >
-  <div style={{ display: "flex", justifyContent: "space-between", gap: 10, flexWrap: "wrap" }}>
+  <div className="glass" style={{ display: "flex", justifyContent: "space-between", gap: 10, flexWrap: "wrap" }}>
     <h2   style={{ marginTop: 0, marginBottom: 0 }}>Bienvenue dans Meemorize</h2>
 
     <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
@@ -1265,12 +1263,10 @@ function normalizeEmailFromSpeech(raw: string): string {
   </p>
 
 <section
+  className="glass"
   style={{
     marginTop: 18,
     padding: 16,
-    borderRadius: 14,
-    border: "1px solid #e5e7eb",
-    background: "#fff",
   }}
 >
   <h2   style={{ marginTop: 0 }}>Progression de votre livre</h2>
@@ -1442,12 +1438,10 @@ function normalizeEmailFromSpeech(raw: string): string {
 
 {progressGuidance ? (
   <div
-    style={{
+  className="glass" 
+  style={{
       marginTop: 18,
       padding: 14,
-      borderRadius: 12,
-      background: "#fafafa",
-      border: "1px solid #e5e7eb",
       lineHeight: 1.6,
     }}
   >
