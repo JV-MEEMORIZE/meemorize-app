@@ -1564,7 +1564,7 @@ function normalizeEmailFromSpeech(raw: string): string {
 
 <section
   id="chapter-preview"
-    style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}
+    className="glass" style={{ marginTop: 18, padding: 14 }}
 >
   <h2>Dernier chapitre généré</h2>
 
@@ -1601,7 +1601,7 @@ function normalizeEmailFromSpeech(raw: string): string {
   )}
 </section>
 
-<section   style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
+<section   className="glass" style={{ marginTop: 18, padding: 14  }}>
   <h2>Chapitres</h2>
   <div style={{ display: "flex", gap: 10, marginTop: 10 }}>
   <button onClick={() => setChapterFilter("all")} style={{ cursor: "pointer" }}>
@@ -1748,7 +1748,7 @@ function normalizeEmailFromSpeech(raw: string): string {
     </ul>
   )}
 </section>
-<section id="book-preview"   style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
+<section id="book-preview"   className="glass" style={{ marginTop: 18, padding: 14 }}>
   <h2>Aperçu livre</h2>
   <button onClick={exportPdf} style={{ cursor: "pointer", marginTop: 10 }}>
   📄 Export PDF (chapitres validés)
@@ -1762,7 +1762,7 @@ function normalizeEmailFromSpeech(raw: string): string {
   )}
 </section>
       {/* --- Formulaire Périodes --- */}
-      <section   style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
+      <section  className="glass" style={{ marginTop: 18, padding: 14 }}>
         <h2>{editingPeriodId ? "Modifier une période" : "Ajouter une période"}</h2>
 
         <div style={{ display: "flex", gap: 50, alignItems: "center"}}>
@@ -1878,7 +1878,7 @@ function normalizeEmailFromSpeech(raw: string): string {
       </section>
 
       {/* --- Formulaire Événements --- */}
-      <section style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
+      <section className="glass" style={{ marginTop: 18, padding: 14 }}>
         <h2>{editingEventId ? "Modifier un événement" : "Ajouter un événement"}</h2>
          
         
@@ -2185,7 +2185,7 @@ function normalizeEmailFromSpeech(raw: string): string {
 </section>
 
       {/* --- CHRONOLOGIE MIXTE --- */}
-      <section style={{ marginTop: 24 }}>
+      <section className="glass" style={{ marginTop: 24 }}>
   <h2>Chronologie</h2>
 
   {chrono.length === 0 ? (
@@ -2345,7 +2345,7 @@ function normalizeEmailFromSpeech(raw: string): string {
     </div>
   )}
 </section>
-<section style={{ marginTop: 18 }}>
+<section className="glass" style={{ marginTop: 18 }}>
   <h2>Souvenirs</h2>
 
   {memories.length === 0 ? (
@@ -2385,7 +2385,7 @@ function normalizeEmailFromSpeech(raw: string): string {
   )}
 </section>
 
-<section style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 12 }}>
+<section className="glass" style={{ marginTop: 18, padding: 14 }}>
   <h2>Personnes</h2>
 
   {people.length === 0 ? (
