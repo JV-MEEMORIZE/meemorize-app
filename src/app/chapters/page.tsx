@@ -995,7 +995,7 @@ function normalizeEmailFromSpeech(raw: string): string {
 
 return (
    <main   style={{ maxWidth: 980, margin: "30px auto", padding: 16, fontFamily: "system-ui" }}>
-    <div className="glass" style={{ padding: 16 }}>
+    <div style={{ padding: 16 }}>
           <AppNav />
     
           <h1 style={{ marginTop: 0 }}>Chapitres</h1>
@@ -1012,7 +1012,7 @@ return (
           {dictationError ? (
             <div style={{ marginTop: 10, fontSize: 12, opacity: 0.85 }}>⚠️ {dictationError}</div>
           ) : null}
-    <section style={{ marginTop: 18, padding: 14, border: "1px solid #ddd", borderRadius: 10 }}>
+    <section className="glass" style={{ marginTop: 18, padding: 14 }}>
       <h2>Chapitres</h2>
       <div style={{ display: "flex", gap: 10, marginTop: 10 }}>
       <button onClick={() => setChapterFilter("all")} style={{ cursor: "pointer" }}>
